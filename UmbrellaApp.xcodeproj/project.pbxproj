@@ -1,0 +1,681 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B4A8FC28B327BA1C5A42037 /* Pods_UmbrellaAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29F5C4217CC5A33F05A1F626 /* Pods_UmbrellaAppTests.framework */; };
+		D36F8E6C74D3BE5FC2EC4D38 /* Pods_UmbrellaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A539137ADC7436B68EAFC503 /* Pods_UmbrellaApp.framework */; };
+		ECF3B20C245D456300128AC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3B20B245D456300128AC1 /* AppDelegate.swift */; };
+		ECF3B20E245D456300128AC1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3B20D245D456300128AC1 /* SceneDelegate.swift */; };
+		ECF3B210245D456300128AC1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3B20F245D456300128AC1 /* ContentView.swift */; };
+		ECF3B212245D456400128AC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF3B211245D456400128AC1 /* Assets.xcassets */; };
+		ECF3B215245D456400128AC1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF3B214245D456400128AC1 /* Preview Assets.xcassets */; };
+		ECF3B218245D456400128AC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECF3B216245D456400128AC1 /* LaunchScreen.storyboard */; };
+		ECF3B223245D456500128AC1 /* UmbrellaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF3B222245D456500128AC1 /* UmbrellaAppTests.swift */; };
+		ECF3B431245D519500128AC1 /* UmbrellaCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF3B430245D519500128AC1 /* UmbrellaCore.framework */; };
+		ECF3B432245D519500128AC1 /* UmbrellaCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF3B430245D519500128AC1 /* UmbrellaCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECF3B435245D51A100128AC1 /* UmbrellaEntity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF3B434245D51A100128AC1 /* UmbrellaEntity.framework */; };
+		ECF3B436245D51A100128AC1 /* UmbrellaEntity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF3B434245D51A100128AC1 /* UmbrellaEntity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECF3B438245D51AA00128AC1 /* UmbrellaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF3B437245D51AA00128AC1 /* UmbrellaFramework.framework */; };
+		ECF3B439245D51AA00128AC1 /* UmbrellaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ECF3B437245D51AA00128AC1 /* UmbrellaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ECF3B43B245D54DF00128AC1 /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF3B43A245D54DF00128AC1 /* RxTest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ECF3B21F245D456500128AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECF3B200245D456300128AC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ECF3B207245D456300128AC1;
+			remoteInfo = UmbrellaApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ECF3B433245D519600128AC1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ECF3B432245D519500128AC1 /* UmbrellaCore.framework in Embed Frameworks */,
+				ECF3B436245D51A100128AC1 /* UmbrellaEntity.framework in Embed Frameworks */,
+				ECF3B439245D51AA00128AC1 /* UmbrellaFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		29F5C4217CC5A33F05A1F626 /* Pods_UmbrellaAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UmbrellaAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA66F071DC3018D2BCCA15F /* Pods-UmbrellaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmbrellaAppTests.release.xcconfig"; path = "Target Support Files/Pods-UmbrellaAppTests/Pods-UmbrellaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		5A2B18A58D3D4CFE1BC698A2 /* Pods-UmbrellaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmbrellaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-UmbrellaAppTests/Pods-UmbrellaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7465C99F94A74EB06B327BBE /* Pods-UmbrellaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmbrellaApp.debug.xcconfig"; path = "Target Support Files/Pods-UmbrellaApp/Pods-UmbrellaApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7E819633CDE2A1AF5C2E0606 /* Pods-UmbrellaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmbrellaApp.release.xcconfig"; path = "Target Support Files/Pods-UmbrellaApp/Pods-UmbrellaApp.release.xcconfig"; sourceTree = "<group>"; };
+		A539137ADC7436B68EAFC503 /* Pods_UmbrellaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UmbrellaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF3B208245D456300128AC1 /* UmbrellaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UmbrellaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF3B20B245D456300128AC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ECF3B20D245D456300128AC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ECF3B20F245D456300128AC1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ECF3B211245D456400128AC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECF3B214245D456400128AC1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ECF3B217245D456400128AC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ECF3B219245D456400128AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF3B21E245D456500128AC1 /* UmbrellaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmbrellaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF3B222245D456500128AC1 /* UmbrellaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmbrellaAppTests.swift; sourceTree = "<group>"; };
+		ECF3B224245D456500128AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF3B430245D519500128AC1 /* UmbrellaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UmbrellaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF3B434245D51A100128AC1 /* UmbrellaEntity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UmbrellaEntity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF3B437245D51AA00128AC1 /* UmbrellaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UmbrellaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF3B43A245D54DF00128AC1 /* RxTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ECF3B205245D456300128AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36F8E6C74D3BE5FC2EC4D38 /* Pods_UmbrellaApp.framework in Frameworks */,
+				ECF3B438245D51AA00128AC1 /* UmbrellaFramework.framework in Frameworks */,
+				ECF3B435245D51A100128AC1 /* UmbrellaEntity.framework in Frameworks */,
+				ECF3B431245D519500128AC1 /* UmbrellaCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF3B21B245D456500128AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF3B43B245D54DF00128AC1 /* RxTest.framework in Frameworks */,
+				6B4A8FC28B327BA1C5A42037 /* Pods_UmbrellaAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D44B0E664F10E98173D948BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7465C99F94A74EB06B327BBE /* Pods-UmbrellaApp.debug.xcconfig */,
+				7E819633CDE2A1AF5C2E0606 /* Pods-UmbrellaApp.release.xcconfig */,
+				5A2B18A58D3D4CFE1BC698A2 /* Pods-UmbrellaAppTests.debug.xcconfig */,
+				3AA66F071DC3018D2BCCA15F /* Pods-UmbrellaAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E5288CCE99A63D1615A86378 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3B43A245D54DF00128AC1 /* RxTest.framework */,
+				ECF3B437245D51AA00128AC1 /* UmbrellaFramework.framework */,
+				ECF3B434245D51A100128AC1 /* UmbrellaEntity.framework */,
+				ECF3B430245D519500128AC1 /* UmbrellaCore.framework */,
+				A539137ADC7436B68EAFC503 /* Pods_UmbrellaApp.framework */,
+				29F5C4217CC5A33F05A1F626 /* Pods_UmbrellaAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ECF3B1FF245D456300128AC1 = {
+			isa = PBXGroup;
+			children = (
+				ECF3B20A245D456300128AC1 /* UmbrellaApp */,
+				ECF3B221245D456500128AC1 /* UmbrellaAppTests */,
+				ECF3B209245D456300128AC1 /* Products */,
+				D44B0E664F10E98173D948BA /* Pods */,
+				E5288CCE99A63D1615A86378 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ECF3B209245D456300128AC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3B208245D456300128AC1 /* UmbrellaApp.app */,
+				ECF3B21E245D456500128AC1 /* UmbrellaAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECF3B20A245D456300128AC1 /* UmbrellaApp */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3B20B245D456300128AC1 /* AppDelegate.swift */,
+				ECF3B20D245D456300128AC1 /* SceneDelegate.swift */,
+				ECF3B20F245D456300128AC1 /* ContentView.swift */,
+				ECF3B211245D456400128AC1 /* Assets.xcassets */,
+				ECF3B216245D456400128AC1 /* LaunchScreen.storyboard */,
+				ECF3B219245D456400128AC1 /* Info.plist */,
+				ECF3B213245D456400128AC1 /* Preview Content */,
+			);
+			path = UmbrellaApp;
+			sourceTree = "<group>";
+		};
+		ECF3B213245D456400128AC1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3B214245D456400128AC1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ECF3B221245D456500128AC1 /* UmbrellaAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF3B222245D456500128AC1 /* UmbrellaAppTests.swift */,
+				ECF3B224245D456500128AC1 /* Info.plist */,
+			);
+			path = UmbrellaAppTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ECF3B207245D456300128AC1 /* UmbrellaApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF3B227245D456500128AC1 /* Build configuration list for PBXNativeTarget "UmbrellaApp" */;
+			buildPhases = (
+				F435689169B56846275603A8 /* [CP] Check Pods Manifest.lock */,
+				ECF3B204245D456300128AC1 /* Sources */,
+				ECF3B205245D456300128AC1 /* Frameworks */,
+				ECF3B206245D456300128AC1 /* Resources */,
+				ECF3B433245D519600128AC1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UmbrellaApp;
+			productName = UmbrellaApp;
+			productReference = ECF3B208245D456300128AC1 /* UmbrellaApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ECF3B21D245D456500128AC1 /* UmbrellaAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF3B22A245D456500128AC1 /* Build configuration list for PBXNativeTarget "UmbrellaAppTests" */;
+			buildPhases = (
+				A1B21E71ADFB4A9CA4F64C81 /* [CP] Check Pods Manifest.lock */,
+				ECF3B21A245D456500128AC1 /* Sources */,
+				ECF3B21B245D456500128AC1 /* Frameworks */,
+				ECF3B21C245D456500128AC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ECF3B220245D456500128AC1 /* PBXTargetDependency */,
+			);
+			name = UmbrellaAppTests;
+			productName = UmbrellaAppTests;
+			productReference = ECF3B21E245D456500128AC1 /* UmbrellaAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ECF3B200245D456300128AC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = kitasuke;
+				TargetAttributes = {
+					ECF3B207245D456300128AC1 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					ECF3B21D245D456500128AC1 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = ECF3B207245D456300128AC1;
+					};
+				};
+			};
+			buildConfigurationList = ECF3B203245D456300128AC1 /* Build configuration list for PBXProject "UmbrellaApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ECF3B1FF245D456300128AC1;
+			productRefGroup = ECF3B209245D456300128AC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ECF3B207245D456300128AC1 /* UmbrellaApp */,
+				ECF3B21D245D456500128AC1 /* UmbrellaAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF3B206245D456300128AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF3B218245D456400128AC1 /* LaunchScreen.storyboard in Resources */,
+				ECF3B215245D456400128AC1 /* Preview Assets.xcassets in Resources */,
+				ECF3B212245D456400128AC1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF3B21C245D456500128AC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A1B21E71ADFB4A9CA4F64C81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UmbrellaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F435689169B56846275603A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UmbrellaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ECF3B204245D456300128AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF3B20C245D456300128AC1 /* AppDelegate.swift in Sources */,
+				ECF3B20E245D456300128AC1 /* SceneDelegate.swift in Sources */,
+				ECF3B210245D456300128AC1 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF3B21A245D456500128AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF3B223245D456500128AC1 /* UmbrellaAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ECF3B220245D456500128AC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ECF3B207245D456300128AC1 /* UmbrellaApp */;
+			targetProxy = ECF3B21F245D456500128AC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ECF3B216245D456400128AC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ECF3B217245D456400128AC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ECF3B225245D456500128AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ECF3B226245D456500128AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ECF3B228245D456500128AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7465C99F94A74EB06B327BBE /* Pods-UmbrellaApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"UmbrellaApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = UmbrellaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitasuke.UmbrellaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ECF3B229245D456500128AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E819633CDE2A1AF5C2E0606 /* Pods-UmbrellaApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"UmbrellaApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = UmbrellaApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitasuke.UmbrellaApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ECF3B22B245D456500128AC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A2B18A58D3D4CFE1BC698A2 /* Pods-UmbrellaAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCrashlytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxTest\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCrashlytics/FirebaseCrashlytics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID/FirebaseInstanceID.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging/FirebaseMessaging.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport/GoogleDataTransportCCTSupport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalyticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxTest/RxTest.framework/Headers\"",
+				);
+				INFOPLIST_FILE = UmbrellaAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitasuke.UmbrellaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UmbrellaApp.app/UmbrellaApp";
+			};
+			name = Debug;
+		};
+		ECF3B22C245D456500128AC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA66F071DC3018D2BCCA15F /* Pods-UmbrellaAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCrashlytics\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleAppMeasurement/Frameworks\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxTest\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCore/FirebaseCore.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseCrashlytics/FirebaseCrashlytics.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstallations/FirebaseInstallations.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseInstanceID/FirebaseInstanceID.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseMessaging/FirebaseMessaging.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransport/GoogleDataTransport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleDataTransportCCTSupport/GoogleDataTransportCCTSupport.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleUtilities/GoogleUtilities.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/PromisesObjC/FBLPromises.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Protobuf/protobuf.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/nanopb/nanopb.framework/Headers\"",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/Firebase\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseAnalyticsInterop\"",
+					"\"${PODS_ROOT}/Headers/Public/FirebaseCoreDiagnosticsInterop\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Firebase/CoreOnly/Sources",
+					"\"${PODS_TARGET_SRCROOT}/Sources/FBLPromises/include\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxTest/RxTest.framework/Headers\"",
+				);
+				INFOPLIST_FILE = UmbrellaAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kitasuke.UmbrellaAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UmbrellaApp.app/UmbrellaApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ECF3B203245D456300128AC1 /* Build configuration list for PBXProject "UmbrellaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF3B225245D456500128AC1 /* Debug */,
+				ECF3B226245D456500128AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF3B227245D456500128AC1 /* Build configuration list for PBXNativeTarget "UmbrellaApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF3B228245D456500128AC1 /* Debug */,
+				ECF3B229245D456500128AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF3B22A245D456500128AC1 /* Build configuration list for PBXNativeTarget "UmbrellaAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF3B22B245D456500128AC1 /* Debug */,
+				ECF3B22C245D456500128AC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ECF3B200245D456300128AC1 /* Project object */;
+}
