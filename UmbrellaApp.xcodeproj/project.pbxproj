@@ -58,6 +58,8 @@
 		7465C99F94A74EB06B327BBE /* Pods-UmbrellaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmbrellaApp.debug.xcconfig"; path = "Target Support Files/Pods-UmbrellaApp/Pods-UmbrellaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7E819633CDE2A1AF5C2E0606 /* Pods-UmbrellaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmbrellaApp.release.xcconfig"; path = "Target Support Files/Pods-UmbrellaApp/Pods-UmbrellaApp.release.xcconfig"; sourceTree = "<group>"; };
 		A539137ADC7436B68EAFC503 /* Pods_UmbrellaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UmbrellaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC8F815E248CB0B90079EE38 /* UmbrellaAppTests-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "UmbrellaAppTests-Release.xcconfig"; path = "UmbrellaAppTests/UmbrellaAppTests-Release.xcconfig"; sourceTree = "<group>"; };
+		EC8F815F248CB0B90079EE38 /* UmbrellaAppTests-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "UmbrellaAppTests-Debug.xcconfig"; path = "UmbrellaAppTests/UmbrellaAppTests-Debug.xcconfig"; sourceTree = "<group>"; };
 		ECF3B208245D456300128AC1 /* UmbrellaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UmbrellaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3B20B245D456300128AC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF3B20D245D456300128AC1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,8 @@
 		ECF3B1FF245D456300128AC1 = {
 			isa = PBXGroup;
 			children = (
+				EC8F815F248CB0B90079EE38 /* UmbrellaAppTests-Debug.xcconfig */,
+				EC8F815E248CB0B90079EE38 /* UmbrellaAppTests-Release.xcconfig */,
 				ECF3B20A245D456300128AC1 /* UmbrellaApp */,
 				ECF3B221245D456500128AC1 /* UmbrellaAppTests */,
 				ECF3B209245D456300128AC1 /* Products */,
@@ -521,7 +525,7 @@
 		};
 		ECF3B22B245D456500128AC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A2B18A58D3D4CFE1BC698A2 /* Pods-UmbrellaAppTests.debug.xcconfig */;
+			baseConfigurationReference = EC8F815F248CB0B90079EE38 /* UmbrellaAppTests-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,7 +588,7 @@
 		};
 		ECF3B22C245D456500128AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3AA66F071DC3018D2BCCA15F /* Pods-UmbrellaAppTests.release.xcconfig */;
+			baseConfigurationReference = EC8F815E248CB0B90079EE38 /* UmbrellaAppTests-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

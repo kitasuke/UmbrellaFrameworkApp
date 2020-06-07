@@ -133,7 +133,7 @@ DEPENDENCIES:
   - SwiftGRPC
 
 SPEC REPOS:
-  https://cdn.cocoapods.org/:
+  trunk:
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAnalytics
@@ -187,6 +187,6 @@ SPEC CHECKSUMS:
   SwiftGRPC: f8fcfecb547c96cc6913de619f95fa3cd09838ee
   SwiftProtobuf: 4fd9645e69b72cbae6ec8da5be0cdd20ca6565dd
 
-PODFILE CHECKSUM: b0af2040d7ced83653b8cd0629ed44417c05f07b
+PODFILE CHECKSUM: 0489c611de844572baa47ebfa4d1f7d5229cfdf8
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3

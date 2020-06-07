@@ -1,0 +1,3 @@
+#include "../Pods/Target Support Files/Pods-UmbrellaFramework/Pods-UmbrellaFramework.debug.xcconfig"
+
+OTHER_LDFLAGS = $(inherited) ${PODS_OTHER_LDFLAGS} -Objc -all_load

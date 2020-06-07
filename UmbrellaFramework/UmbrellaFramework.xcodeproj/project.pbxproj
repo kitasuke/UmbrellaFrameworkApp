@@ -32,6 +32,8 @@
 		607DC22BC89848DDEDEE83F7 /* Pods-UmbrellaFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmbrellaFramework.debug.xcconfig"; path = "Target Support Files/Pods-UmbrellaFramework/Pods-UmbrellaFramework.debug.xcconfig"; sourceTree = "<group>"; };
 		B6A69680A2B919B2EC76CD92 /* Pods_UmbrellaTestsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UmbrellaTestsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E116AC60974D0C527D2A8ECE /* Pods-UmbrellaFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmbrellaFramework.release.xcconfig"; path = "Target Support Files/Pods-UmbrellaFramework/Pods-UmbrellaFramework.release.xcconfig"; sourceTree = "<group>"; };
+		EC8F8156248CAD6A0079EE38 /* UmbrellaFramework-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UmbrellaFramework-Debug.xcconfig"; sourceTree = "<group>"; };
+		EC8F8157248CADD60079EE38 /* UmbrellaFramework-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UmbrellaFramework-Release.xcconfig"; sourceTree = "<group>"; };
 		ECF3B2A5245D492900128AC1 /* UmbrellaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UmbrellaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3B2A8245D492900128AC1 /* UmbrellaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UmbrellaFramework.h; sourceTree = "<group>"; };
 		ECF3B2A9245D492900128AC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +99,8 @@
 		ECF3B29B245D492900128AC1 = {
 			isa = PBXGroup;
 			children = (
+				EC8F8156248CAD6A0079EE38 /* UmbrellaFramework-Debug.xcconfig */,
+				EC8F8157248CADD60079EE38 /* UmbrellaFramework-Release.xcconfig */,
 				ECF3B2A7245D492900128AC1 /* UmbrellaFramework */,
 				ECF3B2B2245D492A00128AC1 /* UmbrellaFrameworkTests */,
 				ECF3B2C5245D4A1200128AC1 /* UmbrellaTestsFramework */,
@@ -492,7 +496,7 @@
 		};
 		ECF3B2BA245D492A00128AC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 607DC22BC89848DDEDEE83F7 /* Pods-UmbrellaFramework.debug.xcconfig */;
+			baseConfigurationReference = EC8F8156248CAD6A0079EE38 /* UmbrellaFramework-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -503,30 +507,6 @@
 				INFOPLIST_FILE = UmbrellaFramework/Info.plist;
 				INSTALL_PATH = "@rpath";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"c++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"RxCocoa\"",
-					"-framework",
-					"\"RxRelay\"",
-					"-framework",
-					"\"RxSwift\"",
-					"-framework",
-					"\"SwiftGRPC\"",
-					"-framework",
-					"\"SwiftProtobuf\"",
-					"-framework",
-					"\"grpc\"",
-					"-framework",
-					"\"nanopb\"",
-					"-framework",
-					"\"openssl_grpc\"",
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kitasuke.UmbrellaFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -539,7 +519,7 @@
 		};
 		ECF3B2BB245D492A00128AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E116AC60974D0C527D2A8ECE /* Pods-UmbrellaFramework.release.xcconfig */;
+			baseConfigurationReference = EC8F8157248CADD60079EE38 /* UmbrellaFramework-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,30 +530,6 @@
 				INFOPLIST_FILE = UmbrellaFramework/Info.plist;
 				INSTALL_PATH = "@rpath";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-l\"c++\"",
-					"-l\"z\"",
-					"-framework",
-					"\"RxCocoa\"",
-					"-framework",
-					"\"RxRelay\"",
-					"-framework",
-					"\"RxSwift\"",
-					"-framework",
-					"\"SwiftGRPC\"",
-					"-framework",
-					"\"SwiftProtobuf\"",
-					"-framework",
-					"\"grpc\"",
-					"-framework",
-					"\"nanopb\"",
-					"-framework",
-					"\"openssl_grpc\"",
-					"-ObjC",
-					"-all_load",
-				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kitasuke.UmbrellaFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -585,6 +541,7 @@
 		};
 		ECF3B2BD245D492A00128AC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8F8156248CAD6A0079EE38 /* UmbrellaFramework-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -603,6 +560,7 @@
 		};
 		ECF3B2BE245D492A00128AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8F8157248CADD60079EE38 /* UmbrellaFramework-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

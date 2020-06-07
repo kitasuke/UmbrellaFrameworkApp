@@ -1,0 +1,4 @@
+#include "../Pods/Target Support Files/Pods-UmbrellaAppTests/Pods-UmbrellaAppTests.debug.xcconfig"
+
+FRAMEWORK_SEARCH_PATHS = ${PODS_FRAMEWORK_SEARCH_PATHS} "${PODS_CONFIGURATION_BUILD_DIR}/RxTest"
+HEADER_SEARCH_PATHS = ${PODS_HEADER_SEARCH_PATHS} "${PODS_CONFIGURATION_BUILD_DIR}/RxTest/RxTest.framework/Headers"

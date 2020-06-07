@@ -26,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC8F8158248CAF630079EE38 /* UmbrellaCore-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UmbrellaCore-Debug.xcconfig"; sourceTree = "<group>"; };
+		EC8F8159248CAF630079EE38 /* UmbrellaCore-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "UmbrellaCore-Release.xcconfig"; sourceTree = "<group>"; };
 		ECE537502482A2470046B843 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
 		ECF3B356245D4AC200128AC1 /* UmbrellaCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UmbrellaCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF3B359245D4AC200128AC1 /* UmbrellaCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UmbrellaCore.h; sourceTree = "<group>"; };
@@ -60,6 +62,8 @@
 		ECF3B34C245D4AC200128AC1 = {
 			isa = PBXGroup;
 			children = (
+				EC8F8158248CAF630079EE38 /* UmbrellaCore-Debug.xcconfig */,
+				EC8F8159248CAF630079EE38 /* UmbrellaCore-Release.xcconfig */,
 				ECF3B358245D4AC200128AC1 /* UmbrellaCore */,
 				ECF3B363245D4AC200128AC1 /* UmbrellaCoreTests */,
 				ECF3B357245D4AC200128AC1 /* Products */,
@@ -360,6 +364,7 @@
 		};
 		ECF3B36B245D4AC200128AC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8F8158248CAF630079EE38 /* UmbrellaCore-Debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -367,8 +372,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}/UmbrellaFramework.framework\"";
-				HEADER_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}/UmbrellaFramework.framework/Headers\"";
 				INFOPLIST_FILE = UmbrellaCore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -389,6 +392,7 @@
 		};
 		ECF3B36C245D4AC200128AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8F8159248CAF630079EE38 /* UmbrellaCore-Release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,8 +400,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}/UmbrellaFramework.framework\"";
-				HEADER_SEARCH_PATHS = "\"${BUILT_PRODUCTS_DIR}/UmbrellaFramework.framework/Headers\"";
 				INFOPLIST_FILE = UmbrellaCore/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -417,6 +419,7 @@
 		};
 		ECF3B36E245D4AC200128AC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8F8158248CAF630079EE38 /* UmbrellaCore-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -435,6 +438,7 @@
 		};
 		ECF3B36F245D4AC200128AC1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC8F8159248CAF630079EE38 /* UmbrellaCore-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
